@@ -1,0 +1,223 @@
+/*
+thanks to http://weboook.blog22.fc2.com/blog-entry-329.html
+*/
+table {
+  width: auto;
+  border-spacing: 0;
+  font-size:14px;
+}
+table th {
+  color: #fff;
+  padding: 8px 15px;
+  background: #258;
+  background:-moz-linear-gradient(rgba(34,85,136,0.7), rgba(34,85,136,0.9) 50%);
+  background:-webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34,85,136,0.7)), to(rgba(34,85,136,0.9)));
+  font-weight: bold;
+  border-left:1px solid #258;
+  border-top:1px solid #258;
+  border-bottom:1px solid #258;
+  line-height: 120%;
+  text-align: center;
+  text-shadow:0 -1px 0 rgba(34,85,136,0.9);
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+table th:first-child {
+  border-radius: 5px 0 0 0;	
+}
+table th:last-child {
+  border-radius:0 5px 0 0;
+  border-right:1px solid #258;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.1),0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+table th:nth-child(7n) {
+  color: #000;
+  background: #ffcccc;
+}
+table th:nth-child(7n+1) {
+  color: #000;
+  background: #ffcccc;
+}
+table tr td {
+  padding: 8px 15px;
+  border-bottom: 1px solid #84b2e0;
+  border-left: 1px solid #84b2e0;
+  text-align: left;
+}
+table tr td:last-child {
+  border-right: 1px solid #84b2e0;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+}
+table tr {
+  background: #fff;
+}
+table tr:last-child td {
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+table tr:hover {
+  background: #bbd4ee;
+  cursor:pointer;
+}
+/* 
+ thanks http://midashi-maker.v-colors.com/
+*/
+.menuRibbon {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	background:#029EBC;
+	color:#EBF7FA;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuRibbonLight {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	background:#80CEDD;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuTab {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 0 5px;
+	border-color: #80CEDD;
+	border-style:solid;
+	background:#029EBC;
+	color:#EBF7FA;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuTabLight {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 0 5px;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#80CEDD;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuTabDouble {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 5px;
+	border-color: #80CEDD;
+	border-style:solid;
+	background:#029EBC;
+	color:#EBF7FA;
+	line-height:140%;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuTabDoubleLight {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 5px;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#80CEDD;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuLine {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 5px 0;
+	border-color: #80CEDD;
+	border-style:solid;
+	background:#029EBC;
+	color:#EBF7FA;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuWarning {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 5px 0;
+	border-color: #402020;
+	border-style:solid;
+	background:#802020;
+	color:#EF0000;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuLineLight {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 5px 0 ;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#80CEDD;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+}
+
+.menuLineDouble {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:5px 0;
+	border-color: #80CEDD;
+	border-style:solid;
+	background:#029EBC;
+	color:#EBF7FA;
+	line-height:140%;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuLineDoubleLightW {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:5px 0;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#fff;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuLineDoubleLight {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:5px 0;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#80CEDD;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuLineLightW {
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	border-width:0 0 5px 0 ;
+	border-color:#029EBC;
+	border-style:solid;
+	background:#fff;
+	color:#0fd8fa;
+	line-height:140%;
+	font-weight:bold;
+}
+
