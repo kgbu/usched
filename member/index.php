@@ -7,7 +7,7 @@
 
   $key = str_replace(array('+', '/', '='), array('_', '-', '.'), (base64_encode($lastmondaystr)));
 ?>
-<h1 class="menuLine">mocoメンバー管理</h1>
+<h1 class="menuLine">メンバー管理</h1>
 <p>
 メンバー一覧です。追加する場合は下端の「メンバー追加」のリンクをクリックしてください。
 </p>

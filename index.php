@@ -52,7 +52,7 @@
     $afteroffset = 1;
   }
 ?>
-<h1 class="menuLineDouble">mocoスケジュール</h1>
+<h1 class="menuLineDouble">スケジュール</h1>
 <p>
 <?php echo $thismondaystr; ?>から
 <!-- 
