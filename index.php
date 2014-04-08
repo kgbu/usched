@@ -52,7 +52,7 @@
     $afteroffset = 1;
   }
 ?>
-<h1 class="menuLineDouble">スケジュール</h1>
+<h1 class="menuLineDouble">mocoスケジュール</h1>
 <p>
 <?php echo $thismondaystr; ?>から
 <!-- 
@@ -95,17 +95,19 @@ strtotime last monday<?php echo date("Y-m-d", strtotime("last monday")); ?>
 
     for ($i = 0; $i < 14; $i++) {
       $mday = date("Y-m-d", mktime(0,0,0, $basem, $based + $i, $baseyr));
-      $contents = "<td>";
+      $contents = "";
       $hit = FALSE;
+      $yasumi = FALSE;
       foreach ($lines as $line) {
         if (($line["date"] == $mday) &&
             ($line["username"] == $row["username"])) {
           if ($hit) {
             $contents = $contents . "<hr>\n";
-          } else {
-            $contents = "<td bgcolor=\"#F0858D\">";
           }
           $hit = TRUE;
+          if ($line["content"] == "休み") {
+            $yasumi = TRUE;
+          }
           $contents = $contents . $line["content"] .
               "<a href=\"./edit.php?taskid=" .
               $line["id"] . "\">✎</a>\n" .
@@ -114,7 +116,13 @@ strtotime last monday<?php echo date("Y-m-d", strtotime("last monday")); ?>
         }
       }
       if ($hit) {
-        $contents = $contents . "|\n";
+        if ($yasumi) {
+          $contents = "<td class=\"tdyasumi\">" . $contents . "|\n";
+        } else {
+          $contents = "<td class=\"tdbusy\">" . $contents . "|\n";
+        }
+      } else {
+         $contents = "<td>";
       }
       echo $contents . "<a href=\"./new.php?username=" .
               $row["username"] . "&date=" .
@@ -126,6 +134,8 @@ strtotime last monday<?php echo date("Y-m-d", strtotime("last monday")); ?>
 
 
 </table>
+<hr>
+<a href="../">閲覧画面へ</a>
 <?php
   include "include/footer.php";
 ?>

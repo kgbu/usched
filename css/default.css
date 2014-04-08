@@ -75,7 +75,15 @@ table tr:hover {
 
 .tablethshukujitsu {
   color: #000; 
-  background: #fff462;
+  background: #f3e100;
+}
+
+.tdbusy{
+  background: #f0858d;
+}
+
+.tdyasumi {
+  background: #fff67f;
 }
 /* 
  thanks http://midashi-maker.v-colors.com/
